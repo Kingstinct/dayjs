@@ -17,7 +17,6 @@ Please visit our website [https://day.js.org](https://day.js.org/docs/en/parse/p
 <br />
 <br />
 
-
 # API Reference
 
 Instead of modifying the native `Date.prototype`, Day.js creates a wrapper for the Date object, called `Dayjs` object.
@@ -385,10 +384,10 @@ dayjs('2019-01-25').toDate()
 
 ### As JSON `.toJSON()`
 
-Returns the `Dayjs` formatted in an ISO8601 `string`.
+Returns the `Dayjs` formatted in an ISO8601 `string` with timezone info.
 
 ```js
-dayjs('2019-01-25').toJSON() // '2019-01-25T02:00:00.000Z'
+dayjs('2019-01-25').toJSON() // '2020-04-02T08:02:17-05:00'
 ```
 
 ### As ISO 8601 String `.toISOString()`

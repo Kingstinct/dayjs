@@ -354,7 +354,7 @@ class Dayjs {
   }
 
   toJSON() {
-    return this.isValid() ? this.toISOString() : null
+    return this.isValid() ? this.format() : null
   }
 
   toISOString() {

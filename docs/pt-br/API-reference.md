@@ -385,7 +385,7 @@ dayjs('2019-01-25').toDate()
 Retorna o objeto `Dayjs` formatado em uma `string` ISO8601.
 
 ```js
-dayjs('2019-01-25').toJSON() // '2019-01-25T02:00:00.000Z'
+dayjs('2019-01-25').toJSON() // '2020-04-02T08:02:17-05:00'
 ```
 
 ### Como uma string ISO 8601 `.toISOString()`
