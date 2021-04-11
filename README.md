@@ -26,6 +26,8 @@ English | [简体中文](./docs/zh-cn/README.zh-CN.md) | [日本語](./docs/ja/R
 
 > Day.js is a minimalist JavaScript library that parses, validates, manipulates, and displays dates and times for modern browsers with a largely Moment.js-compatible API. If you use Moment.js, you already know how to use Day.js.
 
+NOTE: This fork changes the behaviour of toJSON from Moment - specifically it returns a string including timezone (using `format`) where moment would return `toISOString`.
+
 ```js
 dayjs().startOf('month').add(1, 'day').set('year', 2018).format('YYYY-MM-DD HH:mm:ss');
 ```
@@ -84,6 +86,7 @@ dayjs.locale('es') // use Spanish locale globally
 
 dayjs('2018-05-05').locale('zh-cn').format() // use Chinese Simplified locale in a specific instance
 ```
+
 📚[Internationalization](https://day.js.org/docs/en/i18n/i18n)
 
 ### Plugin
